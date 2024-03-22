@@ -1,21 +1,26 @@
+tareas_pendiente = ['lavar ropa', 'compra', 'tintoreria', 'limpieza', 'comidas']
+lista_compras = ['fiambre', 'pollo', 'carne', 'pescado', 'fruta']
+agenda_contactos = {
+    "jose":"625515986",
+    "pepe":"756894423",
+    "laura":"895447896",
+    "esther":"345982654",
+    "paula":"654988723"
+}
 
-# BLOQUE NÚMERO 2
-Programa de Información Personal # aqui tiene que ser un comentario o un print.
-print( "¡Bienvenido al Programa de Información Personal!\n" )
+tareas_pendiente.append('baños')
+tareas_pendiente.remove("limpieza")
+tareas_pendiente.sort()
+print("\nTareas pendientes: \n",tareas_pendiente)
+tareas_pendiente.clear()
+print("\ntareas pendientes está vacia:\n", tareas_pendiente)
 
-# Mensaje personalizado usando .format()
-mensaje_format = "¡Hola, {}, ! Bienvenido a {}.".format(nombre, ciudad); # primero hay que crear los 2 variables nombre y ciudad, 
-                                                                        # el tema de format no se usa [], se usa parentesis (), y despues de "" hay que concatenar con .format 
-# Entrada de datos
-nombre = input ("Introduce tu nombre: ") #poner espacio + añadir ""
-edad = input ("Introduce tu edad: ") # poner espacio
-ciudad = input ("Introduce tu ciudad de residencia: ") # poner espacio + las comillas tienen que ser iguales " = "  o  ' = '
+"""añadir_a_lista_compras = {'naranjas', 'peras', 'piña'}.add(lista_compras)
+"""
+
+print("\nAñadiendo a la lista de compras:\n", lista_compras)
 
 
-
-# Mensaje personalizado usando f-string
-mensaje_fstring = F"Esperamos que disfrutes tu estadía. Tienes {edad:x.2h} años de sabiduría."     # tiene que ser edad:.2f
-
-# Mostrar resultados
-print(mensaje_format x 2)
-print(mensaje_fstring) # hay que declarar bien la variable
+actualizar_agenda_contactos = {'patri':'658989865', 'isabel':'789098765','luis':'456987563'}
+actualizar_agenda_contactos.update(agenda_contactos)
+print("\nAgenda de contactos actualizada", actualizar_agenda_contactos)
