@@ -28,7 +28,7 @@ print("\nAgenda de Contactos: ", agenda_contactos)
 print("Contacto en orden: ",sorted_contacts)
 
 
-salir = input("\nQuieres salir? Escribe si o no: ").lower()
+salir = input("\nEscribe si o no para salir del programa:\n").lower()
 print((salir == "si") and (salir, "Saliendo...") or (salir == "no") and (salir, "Pues nada, quedate xD."))
 
 
