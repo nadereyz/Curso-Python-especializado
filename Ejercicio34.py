@@ -33,13 +33,11 @@ cantidad_productos = len(almacen)
 posicion_pantalones = (almacen.index(("Pantalon", 31.2, 30)) == almacen) # este no funciona
 posicion_pantalones = almacen.index(("Pantalon", 31.2, 30)) >= 0 # pero este si funciona wtf xD
 
-
 print("\n-----------------almacen------(ACTUAL)-----")
 print("Nombre:         Precio:       Cantidad:")
 for nombre, precio, cantidad in almacen:
-    print(f"{nombre}          {precio}        {cantidad}")
+    print(nombre, precio, cantidad, sep="\t")
 
 print(f"\nCantidad de productos en almacen: {cantidad_productos}")
 print(f"Posición de Pantalón en el almacen: {posicion_pantalones}")
 print(f"Producto encontrado (zapatos): {producto_buscado}")
-

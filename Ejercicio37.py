@@ -53,13 +53,13 @@ nombre_planta = enciclopedia_plantas
 
 añadir_planta = {}
 
-print("escribe nuevos datos a la nueva planta:")
-añadir_planta["nombre"] = input("Inserta nombre: ")
-añadir_planta["especie"] = input("Inserta especie: ")
-añadir_planta["familia"] = input("Inserta familia: ")
-añadir_planta["origen"] = input("Inserta origen: ")
-añadir_planta["altura"] = input("Inserta altura: ")
-añadir_planta["usos"] = input("Inserta usos: ")
+print("escribe nuevos datos a la nueva planta")
+añadir_planta["nombre"] = str(input("Inserta nombre: "))
+añadir_planta["especie"] = str(input("Inserta especie: "))
+añadir_planta["familia"] = str(input("Inserta familia: "))
+añadir_planta["origen"] = str(input("Inserta origen: "))
+añadir_planta["altura"] = str(input("Inserta altura: "))
+añadir_planta["usos"] = str(input("Inserta usos: "))
 
 enciclopedia_plantas["planta4"] = añadir_planta
 

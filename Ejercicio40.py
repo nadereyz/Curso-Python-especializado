@@ -13,11 +13,15 @@ personas = int(input("Cuantas personas quieres para evaluar? \n"))
 
 for msg in range(personas):
     edad = int(input(f"Escribe tu edad: \n"))
-    if edad and 12:
+    if edad <= 13:
         print("Eres un niño")
-    elif edad and 19:
+    elif edad <= 19:
         print("Eres un adolescente")
-    elif edad and 64:
+    elif edad <= 64:
         print("Eres un adulto")    
     else: print("Eres un abuelit@ <3")
+
+
+
+
         

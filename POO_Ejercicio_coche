@@ -1,0 +1,28 @@
+class Coche:
+    #Atributo de clase
+    cantidad_coches = 0
+    
+    def __init__(self, marca, modelo):
+        #Atributos de instancia
+        self.marca = marca
+        self.modelo = modelo
+        #Incrementar la cantidad de coches cada vez que se cree una instancia
+        Coche.cantidad_coches += 1
+    
+    def __str__(self): #Me sirve para formatear la representación de los
+        return f"Nuevo coche de la marca {self.marca} - {self.modelo}"
+    
+    def mostrar_info(self):
+        print(f"Marca: {self.marca}, modelo: {self.modelo}")
+        
+coche_david = Coche("Ferrari", "python")
+coche_justo = Coche("LandRover", "freelander")
+
+concesionario = [coche_david, coche_justo]
+
+print(f"La cantidad de coches que existen es: {Coche.cantidad_coches} ")
+
+for _ in concesionario:
+    print(_)
+
+coche_david.mostrar_info()
